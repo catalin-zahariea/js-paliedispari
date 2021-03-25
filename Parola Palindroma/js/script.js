@@ -18,10 +18,11 @@ function checkPalindrome(string) {
     // Variables   
 
     var result;   
+    var flagStop = true;
 
     // ----------------------------------------
 
-    for ( var i = 0; i < string.length / 2; i++) {
+    for ( var i = 0; i < string.length / 2 && flag; i++) {
 
         // ----------------------------------------
         // String characters check
@@ -34,10 +35,10 @@ function checkPalindrome(string) {
         if ( string.charAt(i) == string.charAt(string.length - i - 1) ) {
             result ='La parola è palindroma!';
         } else {
-            return result = 'La parola non è palindroma!';
+            result ='La parola non è palindroma!';
+            flagStop = false;
         }
     }
 
-    console.log(result);
     return result;
 }
