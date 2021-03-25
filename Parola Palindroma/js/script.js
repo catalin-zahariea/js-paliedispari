@@ -22,7 +22,7 @@ function checkPalindrome(string) {
 
     // ----------------------------------------
 
-    for ( var i = 0; i < string.length / 2 && flag; i++) {
+    for ( var i = 0; i < string.length / 2 && flagStop; i++) {
 
         // ----------------------------------------
         // String characters check
