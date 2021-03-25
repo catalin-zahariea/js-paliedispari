@@ -22,8 +22,15 @@ function checkPalindrome(string) {
     // ----------------------------------------
 
     for ( var i = 0; i < string.length / 2; i++) {
+
+        // ----------------------------------------
+        // String characters check
+
         console.log(string.charAt(i));
         console.log(string.charAt(string.length - i - 1));
+
+        // ----------------------------------------
+
         if ( string.charAt(i) == string.charAt(string.length - i - 1) ) {
             result ='La parola è palindroma!';
         } else {
