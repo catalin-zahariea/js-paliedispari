@@ -31,7 +31,8 @@ function checkPalindrome(string) {
         console.log(string.charAt(string.length - i - 1));
 
         // ----------------------------------------
-
+        // .charAt() function returns the character at the specified index inside the parenthesis
+        
         if ( string.charAt(i) == string.charAt(string.length - i - 1) ) {
             result ='La parola è palindroma!';
         } else {
